@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #edfaee;
+}
+
+header, main {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+h1{
+    padding: 8px 10px;
+    color: green;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 14px 0;
+}
+
+section{
+    flex: 1;
+}
+
+.produk-section{
+    margin-bottom: 20px;
+}
+
+.card-produk{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 2px solid darkgrey;
+    border-radius: 6px;
+}
+
+.card-produk, img {
+    width: 80px;
+    border: 1px solid lightgrey;
+    margin-right: 10px;
+    box-shadow: rgba(60,64,67, 0.3) 0px 1px 2px 0px, rgba(60,64,67, 0.15) 0px 1px 3px 1px;
+}
+
+.data-utama{
+    display: flex;
+    flex: 3;
+    height: 100%;
+}
+
+.data-produk h3, .data-produk p{
+    margin-bottom: 4px
+}
+
+.data-produk, h3{
+    font-size: 15px
+}
+
+.data-produk, p{
+    font-size: 12px;
+}
+
+.price{
+    flex: 1;
+    font-size: 18px;
+}
+
+.quantity{
+    display: flex;
+    flex: 1px;
+    align-items: center;
+    border: 2px solid #ccc;
+    background-color: white;
+    height: 35px;
+}
+
+.quantity, button{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+.quantity button:hover{
+    color: green;
+}
+
+.quantity, input{
+    width: 100%;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    outline: none;
+}
+
+.order section{
+    background-color: #ccc;
+    padding: 0 13px;
+    height: max max-content;
+    border border-radius: 5px;
+}
